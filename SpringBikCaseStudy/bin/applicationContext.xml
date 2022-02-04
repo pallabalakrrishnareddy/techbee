@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="bike1" class ="com.spring.Bike" autowire ="byName">
+<property name="model" value="Ktm"/>
+<property name="col" value="red"/>
+<property name="price" value="155000.00"/>
+</bean>
+<bean id="bike2" class ="com.spring.Bike" autowire ="byName">
+<property name="model" value="Hero"/>
+<property name="col" value="Black"/>
+<property name="price" value="65000.00"/>
+</bean>
+
+<bean id="bike3" class ="com.spring.Bike" autowire ="byName">
+<property name="model" value="Tvs"/>
+<property name="col" value="red"/>
+<property name="price" value="80000.00"/>
+</bean>
+
+</beans>
