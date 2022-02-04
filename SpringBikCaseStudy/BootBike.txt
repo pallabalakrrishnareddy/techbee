@@ -1,0 +1,208 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.3</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.springboot</groupId>
+	<artifactId>App</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springboot-1</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+	<dependency>
+    		<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<!--<scope>provided</scope> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+        <dependency>
+    		<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>3.1</version>
+			<scope>test</scope>
+		</dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    </dependency>
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20180130</version>
+</dependency>
+	<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+<dependency>
+    		<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+        <dependency>
+    		<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+        <dependency>
+    		<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>3.2.3.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+    	    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>2.47.1</version>
+		</dependency>
+        
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+===================================================
+package com.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Springboot1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Springboot1Application.class, args);
+	}
+
+}
+----------------------------
+
+package com.springboot.domain;
+public class Bike {
+	private Long id;
+	private String model;
+	private String col;
+	private Double mil;
+	private String companyname;
+	private Double price;
+public Bike(Long id, String model, String col,Double mil, String companyname, Double price) {
+		super();
+		this.id = id;
+		this.model = model;
+		this.col = col;
+		this.mil = mil;
+		this.companyname = companyname;
+		this.price = price;
+	}
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getmodel() {
+		return model;
+	}
+	public void setmodel(String model) {
+		this.model = model;
+	}
+	public String getcol() {
+		return col;
+	}
+	public void setcol(String col) {
+		this.col = col;
+	}
+	public Double getmil() {
+		return mil;
+	}
+	public void setmil(Double mil) {
+		this.mil = mil;
+	}
+	public String getcompanyname() {
+		return companyname;
+	}
+	public void setcompanyname(String companyname) {
+		this.companyname = companyname;
+	}
+	public Double getprice() {
+		return price;
+	}
+	public void setprice(Double price) {
+		this.price = price;
+	}
+	
+	
+}
+
+
+-----------------------------
+
+package com.springboot.dao;
+import java.util.*;
+import org.springframework.stereotype.Component;
+
+import com.springboot.domain.Bike;
+
+@Component
+
+public class BikeDAO {
+	public List<Bike> list() {
+		ArrayList<Bike> BikeList = new ArrayList<Bike>();
+		BikeList.add(new Bike(1L,"KTM","red",45.2,"KTM",175000.00));
+		BikeList.add(new Bike(2L,"splender","red",62.0,"Hero",65000.00));
+		BikeList.add(new Bike(3L,"scottypep","pink",53.1,"Tvs",55000.00));
+		BikeList.add(new Bike(4L,"royal","blue",31.5,"Royalmotors",125000.00));
+		return BikeList;
+	}
+	
+}
+
+
+===========================
+package com.springboot.controller;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.springboot.dao.BikeDAO;
+import com.springboot.domain.Bike;
+@RestController
+public class BikeController {
+	@Autowired
+	private BikeDAO dao;
+	@GetMapping("/Bike/list")
+	public List<Bike> getBikes() {
+		return dao.list();
+	}
+
+}
+------------------------------
+server.port=8085
