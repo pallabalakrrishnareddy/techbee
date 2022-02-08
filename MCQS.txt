@@ -1,0 +1,521 @@
+1.The Session object is lightweight
+True(1.0)
+False(0.0)
+
+2.A JSP page consists of which tags?
+HTML Tags(0.0)
+JSP Tags(0.0)
+Both A and B(1.0)
+None of these(0.0)
+
+3.Which technology do we mix our business logic with the presentation logic?
+Servlet(1.0)
+JSP(0.0)
+Both A and B(0.0)
+None of these(0.0)
+
+4.Which of the following is an advantage of the statement – Separation of business logic from JSP ?
+Custom Tags in JSP(1.0)
+JSP Standard Tag Library(0.0)
+All the above(0.0)
+None of these(0.0)
+
+5.Which of the following code is used to set content type of a page to be serviced using servlet?
+response.setContentType()(1.0)
+request.setContentType()(0.0)
+writer.setContentType()(0.0)
+writer.setContentType()(0.0)
+
+6.Which of the following is the correct order of servlet life cycle phase methods?
+init(), service(), destroy()(1.0)
+initialize(), service(), destroy()(0.0)
+init(), execute(), destroy()(0.0)
+init(), service(), delete()(0.0)
+
+7.Which of the following step is taken by JSP container during Compilation phase?
+Parsing the JSP.(0.0)
+Turning the JSP into a servlet(0.0)
+Compiling the servlet.(1.0)
+All of the above.(0.0)
+
+8.Which of the following is true about servlets?
+Servlets execute within the address space of web server(0.0)
+Servlets are platform-independent because they are written in java(0.0)
+Servlets can use the full functionality of the Java class libraries(0.0)
+Servlets execute within the address space of web server, platform independent and uses the functionality of java class
+libraries(1.0)
+
+9.A JSP is transformed into a(n):
+Java applet(0.0)
+Java servlet(1.0)
+Either 1 or 2 above(0.0)
+Neither 1 nor 2 above(0.0)
+
+10.Which element of hbm.xml defines maps the unique ID attribute in class to the primary key of the database table?
+id(1.0)
+Generator(0.0)
+primaryKey(0.0)
+
+11.Which of the following is not an advantage of Hibernate Criteria API?
+Allows to use aggregate functions(0.0)
+Cannot order the result set(1.0)
+Allows to fetch only selected columns of result(0.0)
+Can add conditions while fetching results(0.0)
+
+12.Which of the following is not an advantage of using Hibernate Query Language?
+Database independent(0.0)
+Easy to write query(0.0)
+No need to learn SQL(0.0)
+Difficult to implement(1.0)
+
+13.Which of the following method is used inside session only?
+merge()(0.0)
+update()(1.0)
+end()(0.0)
+Kill()(0.0)
+
+14,Which of the following methods hits database always?
+load()(0.0)
+loadDatabase()(0.0)
+getDatabase()(0.0)
+get()(1.0)
+
+15.Which of the following is true about persistent state of a persistent entity?
+You can make a transient instance persistent by associating it with a Session.(0.0)
+A persistent instance has a representation in the database.(0.0)
+A persistent instance has an identifier value.(0.0)
+All of the above.(1.0)
+
+16.What is the difference between get() and load() methods of session object?
+get() returns null if no data is present where as load throws ObjectNotFoundException exception in such case.(0.0)
+get() always hits the database whereas load() method doesn't hit the database.(0.0)
+get() returns actual object whereas load() returns proxy object.(0.0)
+All of the above(1.0)
+
+17.Which element of hbm.xml is used to map a Java class property to a column in the database table?
+Id(0.0)
+generator(0.0)
+property(1.0)
+class(0.0)
+
+18.Identify the true statement about <class> element?
+The database table name is specified using the table attribute of the class element(0.0)
+The Java class name is specified using the name attribute of the class element.(0.0)
+The <class> elements are used to define specific mappings from a Java classes to the database tables(0.0)
+All of the above(1.0)
+
+19.Which of the following element is used to represent many-to-many relationship in hibernate?
+<many-to-many>(1.0)
+<many-many>(0.0)
+<ManyToMany>(0.0)
+None of these.(0.0)
+
+20.What is the full form of POJOs?
+Plane Old Java Objects.(0.0)
+Particular Old Java Objects(0.0)
+Plain Open Java Objects(0.0)
+Plain Old Java Objects(1.0)
+
+21.Which of the following is true about detached state of a persistent entity?
+Once we close the HibernateSession, the persistent instance will become a detached instance.(1.0)
+A new instance of a persistent class which is not associated with a Session.(0.0)
+You can make a transient instance detached by associating it with a Session.(0.0)
+None of these(0.0)
+
+22.What does hibernate.hbm2ddl.auto create this means?
+create tables automatically(1.0)
+create session object automatically(0.0)
+create Session Factory object automatically(0.0)
+None of these(0.0)
+
+23.______object is used to create SessionFactory object in hibernate?
+Session(0.0)
+Configuration(1.0)
+Transaction(0.0)
+Factory(0.0)
+
+24.Which of the following is not a state of object in Hibernate?
+Attached state(1.0)
+Detached state(0.0)
+Persistent state(0.0)
+Transient state(0.0)
+
+25.Transient and detached objects in hibernate are?
+Instances of persistent class that are not currently associated with session(1.0)
+Instances of persistent class which are in session.(0.0)
+
+26.Which object is used to create SessionFactory object in hibernate?
+Configuration(1.0)
+SessionFactory(0.0)
+Session(0.0)
+Transaction(0.0)
+
+27.Which of following annotations is used to map a member of the Entity class with primary key of table?
+@Property(0.0)
+@Column(0.0)
+@Id(1.0)
+@Index(0.0)
+
+28.What is the Minimum Java version need for Spring boot?
+Java 8(1.0)
+Java 10(0.0)
+Java 9(0.0)
+Java 5(0.0)
+
+29.What is the Annotation used for Rest controller
+@Restcontroller(0.0)
+@RestController(1.0)
+@Controller(0.0)
+@SpringBootApplication(0.0)
+
+30.What are all IDE can be used for Spring boot Development
+Eclipse(0.0)
+Intelli J(0.0)
+Spring Tool Suite(STS)(0.0)
+All Above(1.0)
+
+
+31.Which of the following annotations can be used to specify that primary key column should automatically generate its values?
+
+@AuGenerate(0.0)
+@GeneratedValue(1.0)
+@Generate(0.0)
+None of the above(0.0)
+
+32.Which of following classes contain constant values for various cascade types?
+. CascadeStrategy(0.0)
+. CascadeType(1.0)
+. CascadeStrategies(0.0)
+. CascadeTypes(0.0)
+
+33.Which of following annotations is used to specify the name of table to which the persistence class is mapped?
+@Table(1.0)
+@Entity(0.0)
+@Class(0.0)
+@Domain(0.0)
+
+34.Which of the following classes have constant the values EAGER and LAZY?
+FetchType(1.0)
+Fetch(0.0)
+FetchMode(0.0)
+FetchStyle(0.0)
+
+35.Which of following annotations is used to map a member of the Entity class with primary key of table?
+@Property(0.0)
+@Column(0.0)
+@Id(1.0)
+@Index(0.0)
+
+36.Which of the following annotations support cascading?
+@JoinColumn(0.0)
+@JoinTable(0.0)
+@OneToOne(1.0)
+All of the listed options(0.0)
+
+37.What is the dependency need to create a Spring boot Application
+spring-boot-starter-web(0.0)
+spring-boot-maven-plugin(0.0)
+spring-boot-html(0.0)
+spring-boot-starter(1.0)
+
+38.Which of the following file is used for configuring jars for a Spring Boot appication using Maven?
+config.xml(0.0)
+pom.xml(1.0)
+META-INF(0.0)
+None of the above(0.0)
+
+39.What is default scope of bean in Spring framework?
+Prototype(0.0)
+Singleton(1.0)
+Request(0.0)
+Session(0.0)
+
+40.What is default Web server used in Spring boot Application?
+Jboss(0.0)
+JSP(0.0)
+Apache Tomcat(1.0)
+Jetty(0.0)
+
+41.How to get All the Data from Customer Table using CustomerRepository?
+CustomerRepository.findAll()(1.0)
+Customer.findByID()(0.0)
+CustomerTable.getAll()(0.0)
+None of the Abobe(0.0)
+
+42.“form method="POST" action="submit" /> </form>
+Which Controller will be triggered the when the above form is Submitted?
+@PostMapping("/submit")(1.0)
+@PutMapping("/submit")(0.0)
+@GetMapping("/submit")(0.0)
+@DeleteMapping("/submit")(0.0)
+
+43.What is the dependency need to create a Spring boot web Application
+spring-boot-starter-test(0.0)
+spring-boot-maven-plugin(0.0)
+spring-boot-starter-web(1.0)
+None of the above.(0.0)
+
+44.How will you include a dependency in a Project?
+Add dependency inside pom.xml file(1.0)
+Using Buildpath(0.0)
+Copy & Paste the .Jar file inside src folder(0.0)
+None(0.0)
+
+45.Which of the following is used by Maven?
+applicationContext.xml(0.0)
+config.xml(0.0)
+META-INF(0.0)
+pom.xml(1.0)
+
+46.A JSP page consists of which tags?
+HTML tags(0.0)
+JSP tags(0.0)
+Both A & B(1.0)
+
+47.A JSP is transformed into a(n):
+Java applet(0.0)
+Servlet context(0.0)
+Either 1 or 2 above(0.0)
+Neither 1 nor 2 above(1.0)
+
+48.Servlet used for
+Dynamic purpose(1.0)
+static(0.0)
+hardcode(0.0)
+None(0.0)
+
+49.Application servers are
+Jboss(0.0)
+Glass fish(0.0)
+IBM websphere(0.0)
+All above(1.0)
+
+50.What are the functions of Servlet container?
+Life cycle management(0.0)
+Multi threading(0.0)
+Communication support(0.0)
+Above all(1.0)
+
+51.The life cycle of a servlet is managed by
+servlet container(0.0)
+servlet context(0.0)
+the supporting protocol(0.0)
+All of the above(1.0)
+
+52.Which packages represent interfaces and classes for servlet API?
+javax.servlet(0.0)
+javax.servlet.http(0.0)
+Both A & B(1.0)
+None of the above(0.0)
+
+53.How can we invalidate a session?
+session.discontinue()(0.0)
+session.disconnect()(0.0)
+session.invalidate()(1.0)
+session.falsify()(0.0)
+
+54.“request” is instance of which one of the following classes?
+HttpServletRequest(1.0)
+Request(0.0)
+HttpRequest(0.0)
+ServletRequest(0.0)
+
+55._______________ object is used to create SessionFactory object in hibernate?
+Session(0.0)
+Configuration(1.0)
+Transaction(0.0)
+Factory(0.0)
+
+56.Hibernate is an?
+Open Source(0.0)
+Lightweight(0.0)
+ORM(0.0)
+All(1.0)
+
+57.In which file database table configuration is stored?
+.dbm.(0.0)
+.hbm(1.0)
+.ora(0.0)
+.sql(0.0)
+
+58.Which of the following is not an advantage of using Hibernate Query Language?
+Database independent(0.0)
+Easy to write query(0.0)
+No need to learn SQL(0.0)
+Difficult to implement(1.0)
+
+59.Which of the following is not a state of object in Hibernate?
+Attached()(1.0)
+Detached()(0.0)
+Persistent()(0.0)
+Transient()(0.0)
+
+60.Which of the following method is used inside session only?
+merge()(0.0)
+end()(0.0)
+update()(1.0)
+kill()(0.0)
+
+61.Which of the following is not a core interface of Hibernate?
+Configuration(0.0)
+Criteria(0.0)
+SessionManagement(1.0)
+Session(0.0)
+
+62.Identify the true statement about <class> element?
+The database table name is specified using the table attribute of the class element(0.0)
+The Java class name is specified using the name attribute of the class element.(0.0)
+The <class> elements are used to define specific mappings from a Java classes to the database tables(0.0)
+All of the above(1.0)
+
+63.Which of the following element is used to represent many-to-many relationship in hibernate?
+<many-to-many>(1.0)
+<many-many>(0.0)
+<ManyToMany>(0.0)
+None of these.(0.0)
+
+64.What is the full form of POJOs?
+Plane Old Java Objects.(0.0)
+Particular Old Java Objects(0.0)
+Plain Open Java Objects(0.0)
+Plain Old Java Objects(1.0)
+
+65.Which of the following is true about detached state of a persistent entity?
+Once we close the HibernateSession, the persistent instance will become a detached instance.(1.0)
+A new instance of a persistent class which is not associated with a Session.(0.0)
+You can make a transient instance detached by associating it with a Session.(0.0)
+None of these(0.0)
+
+66.What does hibernate.hbm2ddl.auto create this means?
+create tables automatically(1.0)
+create session object automatically(0.0)
+create Session Factory object automatically(0.0)
+None of these(0.0)
+
+67.______object is used to create SessionFactory object in hibernate?
+Session(0.0)
+Configuration(1.0)
+Transaction(0.0)
+Factory(0.0)
+
+68.Which of the following is not a state of object in Hibernate?
+Attached state(1.0)
+Detached state(0.0)
+Persistent state(0.0)
+Transient state(0.0)
+
+69.Transient and detached objects in hibernate are
+Instances of persistent class that are not currently associated with session(1.0)
+Instances of persistent class which are in session.(0.0)
+
+70.Which object is used to create SessionFactory object in hibernate?
+Configuration(1.0)
+SessionFactory(0.0)
+Session(0.0)
+Transaction(0.0)
+
+71.Which of the following is not an advantage of Hibernate Criteria API?
+Allows to use aggregate functions(0.0)
+Cannot order the result set(1.0)
+Allows to fetch only selected columns of result(0.0)
+Can add conditions while fetching results(0.0)
+
+72.Which of the following is not an advantage of using Hibernate Query Language?
+Database independent(0.0)
+Easy to write query(0.0)
+No need to learn SQL(0.0)
+Difficult to implement(1.0)
+
+73.Which of the following method is used inside session only?
+merge()(0.0)
+update()(1.0)
+end()(0.0)
+Kill()(0.0)
+
+74.Which of the following methods hits database always?
+load()(0.0)
+loadDatabase()(0.0)
+getDatabase()(0.0)
+get()(1.0)
+
+75.Which of the following is true about persistent state of a persistent entity?
+You can make a transient instance persistent by associating it with a Session.(0.0)
+A persistent instance has a representation in the database.(0.0)
+A persistent instance has an identifier value.(0.0)
+All of the above.(1.0)
+
+76.What is the difference between get() and load() methods of session object?
+get() returns null if no data is present where as load throws ObjectNotFoundException exception in such case.(0.0)
+get() always hits the database whereas load() method doesn't hit the database.(0.0)
+get() returns actual object whereas load() returns proxy object.(0.0)
+All of the above(1.0)
+
+77.Which element of hbm.xml is used to map a Java class property to a column in the database table?
+Id(0.0)
+generator(0.0)
+property(1.0)
+class(0.0)
+Identify the true statement about <class> element?
+
+78.Consider the following persistence class and choose the correct code segment to fill up the blank in EmployeeDAO class to retrieve the
+employee details whose salary is lesser than 10000.
+Employee.java
+//Necessary header files
+@Entity
+@Table(name = "employee")
+class Employee {
+@Id
+Integer id;
+@Column
+String name;
+@Column
+Float salary;
+// Constructor, getter &#38; setters
+}
+EmployeeDAO.java
+//Necessary header files
+class EmployeeDAO {
+public List<Employee> filterEmployeeBySalary() {
+Session session=HibernateUtil.getSessionFactory().openSession();
+Criteria criteria = session.createCriteria(Employee.class);
+_________________________
+List<Employee> employees = criteria.list();
+session.close();
+return employees;
+}
+}
+criteria.add(Restrictions.lt("salary", 10000.0));(1.0)
+criteria.add(Restrictions.lesserThan("salary", 10000.0));(0.0)
+criteria.add(Restriction.lt("salary", 10000.0));(0.0)
+criteria.add(Restriction.lesserThan("salary", 10000.0));(0.0
+
+79.What is the correct syntax of the declaration which defines the XML version?:
+<?xml version="A.0"?>(1.0)
+<xml version="A.0" />(0.0)
+<?xml version="A.0" />(00)
+
+78.What does DTD stand for?
+Direct Type Definition(0.0)
+Document Type Definition(1.0)
+Do The Dance(0.0)
+Dynamic Type Definition(0.0)
+
+79.Which of the following XML documents are well-formed?
+<firstElement>some text goes here</firstElement>
+<secondElement> another text goes here</secondElement>(1.0)
+<firstElement>some text goes here
+<secondElement>another text goes here</secondElement>
+</firstElement>(0.0)
+<firstElement>some text goes here
+<secondElement> another text goes here</firstElement>
+</secondElement>(0.0)
+</firstElement>some text goes here
+</secondElement>another text goes here
+<firstElement>(0.0)
+
+
+80.Which of the following strings are a correct XML name?
+My Element(0.0)
+_myElement(1.0)
+#myElement(0.0)
+None of these(0.0)
